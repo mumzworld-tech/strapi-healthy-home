@@ -28,7 +28,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
           );
         }
 
-        const prefix = "GR-";
+        const prefix = "HH-";
 
         // Using findOne in Strapi v5
         const lastOrder = await strapi.entityService.findMany(
