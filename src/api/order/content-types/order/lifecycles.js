@@ -109,7 +109,7 @@ module.exports = {
         .plugin("email")
         .service("email")
         .send({
-          to: "services@mumzworld.com",
+          to: "abdel@mumzworld.com",
           ...internalEmailBody["en"],
         });
       return;
