@@ -1,0 +1,71 @@
+{
+  "collectionName": "components_content_service_details",
+  "info": {
+    "displayName": "ServiceDetails"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "priceBeforeDiscount": {
+      "type": "biginteger"
+    },
+    "priceAfterDiscount": {
+      "type": "biginteger"
+    },
+    "discountPercentage": {
+      "type": "integer"
+    },
+    "currencyCode": {
+      "type": "enumeration",
+      "enum": [
+        "AED"
+      ]
+    },
+    "counterQuestion": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "exclusive": {
+      "type": "boolean"
+    },
+    "maxQuantity": {
+      "type": "integer"
+    },
+    "list": {
+      "type": "component",
+      "component": "content.list",
+      "repeatable": true
+    },
+    "instructionsQuestionText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

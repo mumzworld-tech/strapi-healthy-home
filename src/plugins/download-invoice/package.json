@@ -1,0 +1,8 @@
+{
+  "name": "download-invoice",
+  "version": "1.0.0",
+  "strapi": {
+    "name": "download-invoice",
+    "description": "Download Invoice Plugin"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "configurations",
+  "info": {
+    "singularName": "configuration",
+    "pluralName": "configurations",
+    "displayName": "Configuration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "timeRange": {
+      "type": "component",
+      "component": "content.time-range",
+      "repeatable": false
+    },
+    "noOfMonths": {
+      "type": "integer"
+    }
+  }
+}

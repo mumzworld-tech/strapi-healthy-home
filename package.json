@@ -14,16 +14,18 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.28.0",
     "@strapi/plugin-users-permissions": "5.28.0",
+    "@strapi/provider-email-amazon-ses": "^5.31.0",
     "@strapi/strapi": "5.28.0",
     "better-sqlite3": "11.3.0",
     "fs-extra": "^10.0.0",
+    "jspdf": "^3.0.3",
     "mime-types": "^2.1.27",
+    "nodemailer": "^7.0.10",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"

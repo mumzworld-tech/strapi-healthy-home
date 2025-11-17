@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orderId": {
+      "type": "string"
+    },
+    "package": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service"
+    },
+    "customer": {
+      "type": "component",
+      "component": "content.customer",
+      "repeatable": false
+    },
+    "location": {
+      "type": "component",
+      "component": "content.location",
+      "repeatable": false
+    },
+    "price": {
+      "type": "integer"
+    },
+    "total": {
+      "type": "integer"
+    },
+    "paymentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Pending payment",
+        "Payment failed",
+        "Payment confirmed",
+        "Rescheduled",
+        "Sent to vendor",
+        "Cancelled",
+        "QC/Feedback",
+        "Completed",
+        "Refunded"
+      ]
+    },
+    "paymentId": {
+      "type": "string"
+    },
+    "responseId": {
+      "type": "string"
+    },
+    "currencyCode": {
+      "type": "enumeration",
+      "enum": [
+        "AED",
+        "SAR"
+      ]
+    },
+    "locales": {
+      "type": "enumeration",
+      "enum": [
+        "en",
+        "ar"
+      ]
+    },
+    "smsConfirmationSent": {
+      "type": "boolean"
+    },
+    "customerId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "specialInstructions": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "time"
+    }
+  }
+}
