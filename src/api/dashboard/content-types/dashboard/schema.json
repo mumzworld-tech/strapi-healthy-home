@@ -68,6 +68,14 @@
       },
       "component": "content.gallery",
       "repeatable": true
+    },
+    "faqTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

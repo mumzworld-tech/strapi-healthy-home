@@ -31,14 +31,6 @@
         }
       }
     },
-    "faqTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "deliveryTimeText": {
       "type": "string",
       "pluginOptions": {
