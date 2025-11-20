@@ -109,7 +109,7 @@ module.exports = {
         .plugin("email")
         .service("email")
         .send({
-          to: "abdel@mumzworld.com",
+          to: "services@mumzworld.com",
           ...internalEmailBody["en"],
         });
       return;
@@ -298,8 +298,7 @@ module.exports = {
         .plugin("email")
         .service("email")
         .send({
-          // to: "services@mumzworld.com",
-          to: "abdel@mumzworld.com",
+          to: "services@mumzworld.com",
           attachments,
           ...internalEmailBody["en"],
         });
