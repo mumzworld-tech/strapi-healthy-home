@@ -64,7 +64,7 @@ module.exports = ({ strapi }) => ({
     const orderTotal = parseFloat(orderData?.total || 0);
 
     // Order metadata
-    const paymentStatus = orderData?.paymentStatus || "N/A";
+    const paymentStatus = orderData?.paymentStatus || "Confirmed";
     const invoiceDate = new Date().toLocaleDateString();
     const orderDate = this.formatDate(orderData?.createdAt);
 
