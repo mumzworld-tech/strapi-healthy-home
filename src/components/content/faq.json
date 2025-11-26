@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_faqs",
+  "info": {
+    "displayName": "Faq"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "position": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

@@ -35,6 +35,18 @@ export interface ContentCustomer extends Struct.ComponentSchema {
   };
 }
 
+export interface ContentFaq extends Struct.ComponentSchema {
+  collectionName: 'components_content_faqs';
+  info: {
+    displayName: 'Faq';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    position: Schema.Attribute.Integer;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ContentGallery extends Struct.ComponentSchema {
   collectionName: 'components_content_galleries';
   info: {
@@ -118,6 +130,7 @@ declare module '@strapi/strapi' {
       'content.about': ContentAbout;
       'content.checked-list': ContentCheckedList;
       'content.customer': ContentCustomer;
+      'content.faq': ContentFaq;
       'content.gallery': ContentGallery;
       'content.list': ContentList;
       'content.location': ContentLocation;

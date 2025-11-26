@@ -681,6 +681,18 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    faqs: Schema.Attribute.Component<'content.faq', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    faqTitle: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     inclusionsImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     > &
