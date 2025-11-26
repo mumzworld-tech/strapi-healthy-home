@@ -85,6 +85,14 @@
     },
     "time": {
       "type": "time"
+    },
+    "requestStatus": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "cancelled",
+        "completed"
+      ]
     }
   }
 }

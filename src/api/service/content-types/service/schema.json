@@ -47,12 +47,7 @@
         }
       },
       "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "servicePageCta": {
       "type": "string",
@@ -110,12 +105,7 @@
         }
       },
       "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "faqs": {
       "type": "component",
