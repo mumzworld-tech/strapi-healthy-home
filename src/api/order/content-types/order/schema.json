@@ -89,6 +89,7 @@
     },
     "requestStatus": {
       "type": "enumeration",
+      "default": "pending",
       "enum": [
         "pending",
         "cancelled",

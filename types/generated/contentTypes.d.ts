@@ -653,7 +653,8 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     requestStatus: Schema.Attribute.Enumeration<
       ['pending', 'cancelled', 'completed']
-    >;
+    > &
+      Schema.Attribute.DefaultTo<'pending'>;
     responseId: Schema.Attribute.String;
     smsConfirmationSent: Schema.Attribute.Boolean;
     specialInstructions: Schema.Attribute.Text;
