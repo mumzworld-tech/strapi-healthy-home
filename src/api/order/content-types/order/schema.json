@@ -37,6 +37,7 @@
     },
     "paymentStatus": {
       "type": "enumeration",
+      "default": "Pending payment",
       "enum": [
         "Pending payment",
         "Payment failed",

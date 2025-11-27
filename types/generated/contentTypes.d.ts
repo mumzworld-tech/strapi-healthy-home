@@ -647,7 +647,8 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
         'Completed',
         'Refunded',
       ]
-    >;
+    > &
+      Schema.Attribute.DefaultTo<'Pending payment'>;
     price: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     requestStatus: Schema.Attribute.Enumeration<
